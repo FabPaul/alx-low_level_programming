@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Program that prints with new line &  EOF
  * Return: 1 (Success)
