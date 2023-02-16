@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - C program that print's a value followed by a new line
- * return: Always 0 (Success)
+ * return: 0 (Success)
  */
 int main(void)
 {
