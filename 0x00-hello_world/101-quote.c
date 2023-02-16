@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Program that prints with new line &  EOF
- * Return: 0 (Success)
+ * Return: 1 (Success)
  */
 int main(void)
 {
