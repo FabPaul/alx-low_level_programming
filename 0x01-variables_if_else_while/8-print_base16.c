@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int b16;
 	char alpha;
+	int b16
 
 	for (b16 = 0; b16 < 10; b16++)
 		putchar((b16 % 10) + '0');
