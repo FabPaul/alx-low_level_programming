@@ -13,6 +13,6 @@ int main(void)
 	{
 		printf("%d", b10);
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
