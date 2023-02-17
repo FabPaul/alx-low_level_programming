@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * Main - Print's loowercase except q & e
+ * main - Print's loowercase except q & e
  * Return: 0 (Success)
  */
-int Main(void)
+int main(void)
 {
 	char alpha, e, q;
 
