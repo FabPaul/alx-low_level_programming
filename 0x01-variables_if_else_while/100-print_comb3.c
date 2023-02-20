@@ -1,30 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include<time.h>
+
 /**
- * main - different combinations of numbers
+ * main - Different combinations of numbers
  * Result: 0 (Success)
  */
+
 int main(void)
 {
 	int a;
-	int b;
+	int i;
 
 	for (a = 0; a < 9; a++)
 	{
-		for (b = a+1; b <10; b++)
-		{
-	if (b != d)
-	{
-		putchar(a);
-		putchar(b);
-
-		if (a == 8 && b == 9)
-			continue;
-		putchar(',');
-		putchar(' ')
-	}
-		}
+		i = a + 1;
+		do {
+			putchar('0' + a);
+			putchar('0' + i);
+			if (n < 8)
+			{
+				putchar(',');
+				putchar(32);
+			}
+			i++
+		} while (i < 10);
 	}
 	putchar('\n');
 	return (0);
