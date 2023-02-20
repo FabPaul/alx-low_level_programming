@@ -12,7 +12,7 @@ int main(void)
 	char a;
 	char b;
 
-	for (a = 48; a < 57; i++)
+	for (a = 48; a <= 57; i++)
 	{
 		for (b = a + 1; b < 10; b++)
 		{
