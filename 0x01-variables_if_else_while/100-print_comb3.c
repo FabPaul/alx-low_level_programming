@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	char a;
+	char b;
 
 	for (a = 48; a < 57; i++)
 	{
