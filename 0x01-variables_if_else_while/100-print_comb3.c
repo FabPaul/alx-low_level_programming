@@ -1,30 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<time.h>
+#include <time.h>
 
 /**
- * main - Different combinations of numbers
- * Result: 0 (Success)
+ * main - A program that prints the combination of 2 numbers
+ *
+ * Return: 0 (Success)
  */
-
 int main(void)
 {
 	int a;
-	int i;
+	int b;
 
-	for (a = 0; a < 9; a++)
+	for (a = 48; a < 57; i++)
 	{
-		i = a + 1;
-		do {
-			putchar('0' + a);
-			putchar('0' + i);
-			if (n < 8)
+		for (b = a + 1; b < 58; b++)
+		{
+			putchar(a);
+			putchar(b);
+			if (a != 56 || b != 57)
 			{
-				putchar(',');
+				putchar(44);
 				putchar(32);
 			}
-			i++
-		} while (i < 10);
+		}
 	}
 	putchar('\n');
 	return (0);
