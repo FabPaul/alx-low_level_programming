@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.>
 
 /**
  * main - A program that prints the combination of 2 numbers
@@ -7,19 +7,18 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int a, b;
 
 	for (a = 48; a < 57; a++)
 	{
 		for (b = a + 1; b < 10; b++)
 		{
-			putchar(a);
-			putchar(b);
+			putchar('0' + a);
+			putchar('0' + b);
 			if (a != 56 || b != 57)
 			{
-				putchar(44);
-				putchar(32);
+				putchar('44');
+				putchar('32');
 			}
 		}
 	}
