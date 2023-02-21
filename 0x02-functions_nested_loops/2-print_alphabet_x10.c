@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - print alpha in hexa
- * 
+ *
  * Return: void
  */
 
