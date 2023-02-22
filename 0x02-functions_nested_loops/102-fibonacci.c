@@ -1,29 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
- * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
- * Return: void
+ * main -  prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * Return: 0 CSuccess)
  */
+
 int main(void)
 {
-	int a = 0;
-	long s = 1, d = 2;
+	int i, count = 50;
+	unsigned long long fib1 = 1, fib2 = 2, fib3;
 
-	while (a < 50)
+	printf("%llu, %llu, ", fib1, fib2);
+
+	for (i = 2; i < count; i++)
 	{
-		if (a == 0)
-			printf("%d", s);
-		else if (a == 1)
-		printf(", %d", d);
-		else
+		fib3 = fib1 + fib2;
+		printf("%llu", fib3);
+
+		if (i != count - 1)
 		{
-		d += s;
-		s = d - s;
-		printf(", %d", d);
+			printf(", ");
 		}
-		++i;
+
+		fib1 = fib2;
+		fib2 = fib3;
 	}
 	printf("\n");
+
 	return (0);
 }
