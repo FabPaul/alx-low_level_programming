@@ -22,7 +22,7 @@ int main(void)
 			s = d - s;
 			printf(", %ld", d);
 		}
-		++i;
+		++a;
 	}
 	printf("\n");
 	return (0);
