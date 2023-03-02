@@ -6,18 +6,23 @@
  * @dest: The string to copy
  * @src: the source string
  * @n: Number of bytes to copy
+ * Return: A copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, slen = 0;
+	int i = 0;
 
-	while (src[i++])
-		slen++;
-	for (i = 0; src[i] && i < n; i++)
+	while (i < n && src[i] != '\0')
+	{
 		dest[i] = src[i];
-	for (i = slen; i < n; i++)
+		i++;
+	}
+	while (i < n)
+	{
 		dest[i] = '\0';
+		i++;
+	}
 
 	return (dest);
 }
