@@ -6,7 +6,7 @@
  * _memcpy - A function that copies a memory area
  * @dest: location of memory
  * @src: location string where it's copied to
- * @n: Number of bytes
+ * @n: number of bytes
  * Return: copy of a function
  */
 
