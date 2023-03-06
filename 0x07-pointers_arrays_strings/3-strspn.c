@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strspn.c - function that gets the length of a prefix substring
+ * _strspn - function that gets the length of a prefix substring
  * @s: char to be used
  * @accept: second to be used
  * Return: Prefix substring
