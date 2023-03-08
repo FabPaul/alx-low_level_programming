@@ -20,4 +20,8 @@ int _putchar(char c);
 
 int _sqrt(int n, int a);
 
+int verify_prime(int n, int i);
+
+
+
 #endif
