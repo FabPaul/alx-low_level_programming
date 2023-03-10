@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 	for (i = 0; i < 5 && num >= 0; i++)
 	{
 		while (num >= coins[i])
-			  {
-				  num -= coins[i];
-				  score++;
-			  }
+		{
+			num -= coins[i];
+			score++;
+		}
 	}
 	printf("%d\n", score);
 	return (0);
