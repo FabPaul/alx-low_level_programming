@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	i = 0;
 
-	while (q < j)
+	while (q < w)
 	{
 		if (q <= j)
 			s[q] = s1[q];
