@@ -3,53 +3,48 @@
 #include <stdlib.h>
 
 /**
- * argstostr - Function that concatenates all args of a program
- * @ac: interger value
- * @av: char value
- * Return: concatenated values
+ * argstostr - Function that concatenate 2 programs
+ * @ac: first program
+ * @av: second program
+ * Return: Concatenated program
  */
 
 char *argstostr(int ac, char **av)
 {
-	int z = 0, x = 0, c = 0, v = 0;
+	int i, j, k, length;
 	char *s;
 
 	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			length++;
+		}
+		length++;
+	}
+
+	s = malloc(sizeof(char) * (length + 1));
+
+	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	while (x < ac)
-	{
-		while (av[x][c])
-		{
-			z++;
-		}
+	k = 0;
 
-		c = 0;
-		x++;
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			s[k] = av[i][j];
+			k++;
+		}
+		s[k] = '\n';
+		k++;
 	}
 
-	s = malloc((sizeof(char) * z) + ac + 1);
-
-	x = 0;
-	while (av[x])
-	{
-		while (av[x][c])
-		{
-			s[v] = av[x][c];
-			v++;
-			c++;
-		}
-		
-		s[v] = '\n';
-
-		c = 0;
-		v++;
-		x++;
-	}
-
-	v++;
-	s[v] = '\0';
 	return (s);
 }
