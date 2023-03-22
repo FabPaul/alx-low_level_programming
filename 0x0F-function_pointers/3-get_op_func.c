@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * get_op_func - Function that selects the correct function to perform op by the user
+ * get_op_func - Function that selects thecorrect function to perform
+ * asked by a user
  * @s: The operator passed as argument
  * Return: pointer to the function corresponding
  */
