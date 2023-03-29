@@ -4,7 +4,7 @@
 
 /**
  * main - Function that prints an output using the write() function
- * Return - The output
+ * Return: The output
  */
 
 int main(void)
