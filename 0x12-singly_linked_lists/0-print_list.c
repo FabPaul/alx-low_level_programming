@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 /**
  * print_list - FUnction that prints all elelments of a list_t list
  * @h: Pointer to the list_t list
