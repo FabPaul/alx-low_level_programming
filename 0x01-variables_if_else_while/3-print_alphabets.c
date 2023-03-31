@@ -1,21 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - Prints ALHPabet
+ * main - Function that prints upper and lowercase alphabets
  * Return: 0 (Success)
  */
+
 int main(void)
 {
-	char alPH;
+	char alphaBETS;
 
-	for (alPH = 'a'; alPH <= 'z'; alPH++)
+	for (alphaBETS = 'a'; alphaBETS <= 'z'; alphaBETS++)
 	{
-		putchar(alPH);
+		putchar(alphaBETS);
 	}
-	for (alPH = 'A'; alPH <= 'Z'; alPH++)
+	for (alphaBETS = 'A'; alphaBETS <= 'Z'; alphaBETS++)
 	{
-		putchar(alPH);
+		putchar(alphaBETS);
 	}
 	putchar('\n');
 	return (0);
