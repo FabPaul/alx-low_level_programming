@@ -2,15 +2,18 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Print random numbers to last digit
+ * main - Function that assigns random numbers to variable n
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 	int n, a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	/* your code goes here */
+
 	a = n % 10;
 
 	if (a > 5)
@@ -25,5 +28,6 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
 	}
+
 	return (0);
 }
