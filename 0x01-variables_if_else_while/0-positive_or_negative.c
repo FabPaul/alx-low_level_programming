@@ -2,15 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Prints if number is positive, negative or zero
+ * main - Function that assigns a random number to a variable
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
+	/* your code goes there */
 
 		if (n > 0)
 		{
