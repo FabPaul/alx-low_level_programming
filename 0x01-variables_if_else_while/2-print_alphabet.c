@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Prints alphabets in lower case
+ * main - Function that writes alphabets in lowercase
  * Return: 0 (Success)
  */
+
 int main(void)
 {
-	char alpha;
+	char alphabets;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 	{
-		putchar(alpha);
+		putchar(alphabets);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
