@@ -4,7 +4,7 @@
 
 /**
  * add_nodeint - Function that adds a new node at the start of a linked list
- * @h: Pointer to poin the starting address of the list
+ * @head: Pointer to poin the starting address of the list
  * @n: Number of elements on the list
  * Return: Address of the elements or NULL
  */
