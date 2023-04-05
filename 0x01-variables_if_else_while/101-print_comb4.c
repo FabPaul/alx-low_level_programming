@@ -4,7 +4,7 @@
 
 /**
 * main - A program that prints combination of 3 digits
-* Result: 0 (Success)
+* Return: 0 (Success)
 */
 
 int main(void)
