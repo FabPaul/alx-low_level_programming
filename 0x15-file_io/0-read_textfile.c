@@ -17,13 +17,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 	{
-		return(0);
+		return (0);
 	}
 
 
 	fp = fopen(filename, "r");
 
-	if (fp == NULL)
+	if (!fp)
 	{
 		return (0);
 	}
