@@ -38,11 +38,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	reads = fread(buffer, sizeof(char), letters, fp);
 
-	if (reads == -1)
+	if (ferror(fp))
 	{
-		fclose(fp);
-		free(buffer);
-		return (0);
+		reads = 0;
 	}
 
 	fwrite(buffer, sizeof(char), reads, stdout);
