@@ -38,8 +38,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	do
-	{
+	do {
 		reads = read(file_from, buffer, BUFSIZE);
 		if (reads == -1)
 		{
