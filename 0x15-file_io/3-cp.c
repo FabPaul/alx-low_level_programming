@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	file_to = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, p);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, p);
 
 	if (file_from == -1)
 	{
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	if (close(file_from) == -1)
+	if (close(file_to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
