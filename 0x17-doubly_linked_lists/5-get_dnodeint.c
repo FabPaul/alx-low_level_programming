@@ -2,8 +2,8 @@
 
 /**
  * get_dnodeint_at_index - Function that returns the nth node of dlistint list
- * @ head: Head of the list
- * @ index of the node
+ * @head: Head of the list
+ * @index: of the node
  * Return:NULL if the node doesn't exist
  */
 
